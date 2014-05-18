@@ -13,10 +13,11 @@ header .container{
   height: 100%;
   max-width: 1190px;
   margin:0 auto;
+  display: flex;
 }
 
 header .left {
-  float: left;
+  flex: 0 35%;
 
 }
 
@@ -54,7 +55,7 @@ color: #65757F;
 }
 
 header .twitter-button{
-  float: center;
+  flex: 1 35%;
 }
 
 header .twitter-logo{
@@ -64,10 +65,53 @@ header .twitter-logo{
 }
 
 header .right {
-  float: right;
+  flex: 0 20%;
   display: flex;
 }
 
 header .right nav, .right form {
   flex:auto;
+}
+
+.body-container {
+  max-width: 1190px;
+  margin:0 auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-top: 10px;
+  display: flex;
+}
+.user-details {
+  flex: 290px;
+  /*width: 290px;*/
+  background-color: green;
+}
+
+.user .cover-photo {
+  height: 95px;
+  width: 100%;
+  background-color: red;
+  display: inline-block;
+}
+
+.user .profile-pic{
+  height: 70px;
+  width: 70px;
+  margin: -30px 0 0 8px;
+  background-color: pink;
+  display: inline-block;
+}
+
+.tweet-feed{
+  display: inline-block;
+  flex: 590px;
+  background-color: white;
+  margin: 0 10px;
+
+}
+
+.suggestions{
+  display: inline-block;
+  flex: 290px;
+    background-color: green;
 }
