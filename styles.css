@@ -1,15 +1,21 @@
 body {
 background-color: lightblue;
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+    color: black;
 }
 
 header{
   height: 47px;
   border-bottom-width: 1px;
+  background-color: white;
 }
 
 header .container{
-  background-color: white;
   height: 100%;
   max-width: 1190px;
   margin:0 auto;
@@ -46,12 +52,12 @@ header .left .Icon{
 
 header .left .text{
 font-size: 13px;
+font-weight: 500;
+color: #65757F;
 display: inline-block;
 margin-left: 3px;
 vertical-align: top;
 padding-top: 17px;
-font-weight: 500;
-color: #65757F;
 }
 
 header .twitter-button{
@@ -75,16 +81,29 @@ header .right nav, .right form {
 
 .body-container {
   max-width: 1190px;
+  min-width: 900px;
   margin:0 auto;
   padding-left: 14px;
   padding-right: 14px;
   margin-top: 10px;
-  display: flex;
 }
+
 .user-details {
-  flex: 290px;
-  /*width: 290px;*/
+  float: left;
+  min-width: 290px;
   background-color: green;
+}
+
+.user {
+  font-size: 13px;
+  font-weight: 500;
+  color: black;
+}
+
+.user .user-fields {
+  font-weight: 700;
+  font-size: 18px
+
 }
 
 .user .cover-photo {
@@ -104,7 +123,8 @@ header .right nav, .right form {
 
 .tweet-feed{
   display: inline-block;
-  flex: 590px;
+  float: left;
+  min-width: 590px;
   background-color: white;
   margin: 0 10px;
 
@@ -112,6 +132,7 @@ header .right nav, .right form {
 
 .suggestions{
   display: inline-block;
-  flex: 290px;
-    background-color: green;
+  float: left;
+  min-width: 290px;
+  background-color: green;
 }
